@@ -21,8 +21,7 @@
       display: inline-block;
     }
   }
-  &__secondColumn {
-        }
+
 }
 
 @include u.breakpoint(mediumplus) {
@@ -49,7 +48,7 @@
   .footer {
     flex-direction: row;
     &__secondColumn {
-        display: inline;
-        }
+      display: inline;
+    }
   }
 }

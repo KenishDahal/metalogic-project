@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+1. Introduction
+   Redesigning a page from the Metalogic website. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+2. Architecture
+   npm package  used 
 
-## Available Scripts
+3.  Design
+    Thoroughly studies the structure of Mealogic website. Made a wireframe of the wibesite. Diffenet components, mixins, pages ,scss and many more.
 
-In the project directory, you can run:
+4.  Development
+    - npx create-react-app my-react-app
 
-### `npm start`
+    Start the Development Server
+    - npm start
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    Install all Dependencies
+    - npm i 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+5.  Features
+    - Navbar: When the screen is in scroll, the navbar is hidden and unhidden accordingly. 
 
-### `npm test`
+    - React Headroom is used as a component.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    - Component modal: since 1st 2nd 3rs  section is similar ,, one component is used on all with props  injection.
 
-### `npm run build`
+    -Scss features:
+       *Breakpoint is used for diffent viewport.
+       *typos is customised.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+6.  Deployment
+     npm run build  to set up for deployment.
+     Netlify is used for deployment
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+     demo link - https://metalogic.netlify.app/
+     code - https://github.com/KenishDahal/metalogic-project
+     
+# Design decisions
+   Mobile menu is changed,as it was using whole page. I changed it using Modal component, which appears from right side of screen.  
 
-### `npm run eject`
+   Padding is consistent is mobile view, whereas it wasn't previously.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   Structure folder is used in designing.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   footer one section is hidden below large breakpoint. (around 1080)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Challenges encountered.
+   - Since animation was not too difficult, but time was insuffient due to my poor timemangement.
+   - Typography was difficult to allign.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
