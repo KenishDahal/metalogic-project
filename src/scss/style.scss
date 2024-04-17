@@ -1,11 +1,10 @@
 @use "./util/breakpoints" as u;
-@import "./globals/_typo";
-
-
+@import "./globals/typo";
 
 // components
 @import "./components/button";
-@import "./components/nav/navbar.scss";
+@import "./components/navbar.scss";
+@import "./components/customModal.scss";
+@import "./components/footer.scss";
 
-
-@import "../pages/Home/home.scss";
+@import "./pages/about.scss";

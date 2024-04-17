@@ -1,0 +1,122 @@
+.aboutPage__first {
+  position: relative;
+  &__section {
+    position: relative;
+    background-color: rgb(15, 51, 108);
+    background-image: url(../../../public/herobg.svg);
+    background-size: cover;
+    color: white;
+    font-weight: 600;
+    padding: 100px 236px;
+    &__absolute {
+      width: 60%;
+      position: absolute;
+      bottom: -70px;
+      left: 20%;
+      border-radius: 0.75rem;
+      color: black;
+      // margin-left: -390px;
+      background-color: white;
+      display: flex;
+      justify-content: space-evenly;
+      gap: 40px;
+      font-size: 70px;
+      padding-block: 16px;
+      &__no {
+        color: rgb(0 128 128);
+        &__body {
+          line-height: 1px;
+          color: black;
+        }
+        &__counter {
+          text-align: center;
+          color: rgb(0 128 128);
+          font-size: 3rem;
+        }
+      }
+    }
+  }
+  &__vision {
+    background-color: rgb(193, 172, 172);
+    padding-block: 100px;
+    padding-inline: 236px;
+    text-align: center;
+  }
+}
+@media (max-width: 1100px) {
+  .aboutPage__first {
+    &__section {
+      padding: 60px 106px;
+      &__absolute {
+        bottom: -50px;
+        font-size: 70px;
+      }
+    }
+  }
+}
+
+@media (max-width: 998px) {
+  .aboutPage__first {
+    &__section {
+      &__absolute {
+        font-size: 70px;
+        left: 22%;
+        &__no {
+          &__body {
+            line-height: 1px;
+          }
+          &__counter {
+            font-size: 3rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 798px) {
+  .aboutPage__first {
+    &__section {
+      &__absolute {
+        font-size: 40px;
+        bottom: -30px;
+        &__no {
+          &__body {
+            line-height: 1px;
+          }
+          &__counter {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+    &__vision {
+      padding-block: 100px;
+      padding-inline: 106px;
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  .aboutPage__first {
+    &__section {
+      padding: 20px 16px;
+      &__absolute {
+        width: 94%;
+        left: 3%;
+        &__no {
+          &__body {
+            line-height: 1px;
+          }
+          &__counter {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+    &__vision {
+      padding-block: 100px;
+      padding-inline: 16px;
+    }
+  }
+}

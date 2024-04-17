@@ -1,0 +1,135 @@
+/* 
+/* navbar style start  */
+.main--nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: rgb(0 28 72);
+  // position:absolute;
+  border-bottom: 1px hsla(0, 0%, 100%, 0.1) solid;
+  z-index: 100;
+  &__logo {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    align-items: center;
+    font-weight: 700;
+    &__name {
+      color: white;
+      font-family: "Exo 2", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 600;
+      font-style: normal;
+      letter-spacing: 0.1em;
+    }
+    figure {
+      margin: 0;
+    }
+    img {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+  &__menu--link {
+    width: 100%;
+    align-items: center;
+    ul {
+      display: flex;
+      gap: 40px;
+      justify-content: space-around;
+      align-items: center;
+      margin: 0;
+      font-weight: 700;
+      a {
+        color: white;
+      }
+    }
+  }
+  &__btn {
+    width: 100%;
+    text-align: end;
+    button {
+      background-color: rgb(229 59 58);
+      color: white;
+      padding: 0.5rem 1rem;
+      display: inline-flex;
+      border-radius: 6px;
+      text-decoration: none;
+      border: none;
+    }
+    //   &__hamburger--menu {
+    //     display: none;
+    //   }
+  }
+  &__bar {
+    display: none;
+  }
+}
+
+/* responsive css style  */
+// Normal way
+@media (max-width: 998px) {
+  .main--nav {
+    &__menu--link {
+      display: none;
+    }
+    &__bar {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 798px) {
+  .main--nav {
+    &__btn {
+      display: none;
+    }
+    &__bar {
+      display: block;
+      font-size: 1.55rem;
+      color:  rgb(229 59 58);;
+   
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  .main--nav {
+    height: 6rem;
+    &__logo {
+      height: 6rem;
+    }
+    &__btn {
+      display: none;
+    }
+  }
+  .logo h2 {
+    font-size: 2rem;
+  }
+}
+
+li {
+  list-style: none;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  width: 40%;
+  height: 100vh;
+  color: black;
+  align-items: center;
+  position: relative;
+  left: 60%;
+  background-color: white;
+  &--form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &--button {
+    background-color: rgb(229 59 58);
+  }
+}
