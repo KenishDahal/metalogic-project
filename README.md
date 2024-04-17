@@ -1,3 +1,5 @@
+Documentation
+
 1. Introduction
    Redesigning a page from the Metalogic website. 
 
